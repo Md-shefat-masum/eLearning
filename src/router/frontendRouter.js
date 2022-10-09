@@ -12,7 +12,7 @@ const FrontendRouter = {
 			component: frontend,
 		},
 		{
-			path: "",
+			path: "about",
 			name: "about",
 			component: about,
 		},

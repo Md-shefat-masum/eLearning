@@ -28,17 +28,20 @@ import Faq from "./home/faq.vue";
 import Contact from "./home/contact.vue";
 export default {
 	components: {
-    Banner,
-    About,
-    WhyBest,
-    Feature,
-    DealOfWeek,
-    Pricing,
-    Testimonial,
-    Subscribe,
-    Faq,
-    Contact
-},
+		Banner,
+		About,
+		WhyBest,
+		Feature,
+		DealOfWeek,
+		Pricing,
+		Testimonial,
+		Subscribe,
+		Faq,
+		Contact,
+	},
+	created: function () {
+		// window.homePagePlugins();
+	},
 };
 </script>
 
