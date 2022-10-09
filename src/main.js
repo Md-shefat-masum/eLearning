@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 
 // let $ = (window.jQuery = require("jquery"));
-window.$ = $;
+// window.$ = $;
 
 window.axios = require("axios");
 window.axios.default.baseURL = `${process.env.VUE_APP_MY_SERVER_BASE}/api/v1`;

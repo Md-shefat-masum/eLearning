@@ -186,7 +186,53 @@
 </template>
 
 <script>
-export default {};
+export default {
+	created: function () {
+		setTimeout(() => {
+			this.init_jq();
+		}, 100);
+	},
+	methods: {
+		init_jq: function () {
+			// product_slider
+			let $ = window.$;
+			var $product_slider = $(".product-slider");
+			$product_slider.owlCarousel({
+				loop: true,
+				nav: true,
+				navText: [
+					'<i class="fa fa-angle-left"></i>',
+					'<i class="fa fa-angle-right"></i>',
+				],
+				dots: false,
+				margin: 30,
+				autoplay: false,
+				autoplayTimeout: 8000,
+				smartSpeed: 1500,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					576: {
+						items: 1,
+					},
+					768: {
+						items: 2,
+					},
+					992: {
+						items: 3,
+					},
+					1200: {
+						items: 4,
+					},
+					1920: {
+						items: 4,
+					},
+				},
+			});
+		},
+	},
+};
 </script>
 
 <style></style>

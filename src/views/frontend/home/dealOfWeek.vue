@@ -175,13 +175,44 @@
 <script>
 export default {
 	created: function () {
-		this.init_jq();
+		setTimeout(() => {
+			this.init_jq();
+		}, 100);
 	},
 
 	methods: {
 		init_jq: function () {
 			// Product deal countdown
 			let $ = window.$;
+
+			// deal_slider
+			var $deal_slider = $(".deal-slider");
+			$deal_slider.owlCarousel({
+				loop: true,
+				nav: false,
+				autoplay: false,
+				dots: false,
+				margin: 30,
+				autoplayTimeout: 3000,
+				smartSpeed: 1200,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					576: {
+						items: 1,
+					},
+					950: {
+						items: 1,
+					},
+					960: {
+						items: 1,
+					},
+					1200: {
+						items: 1,
+					},
+				},
+			});
 
 			$("[data-countdown]").each(function () {
 				var $this = $(this),

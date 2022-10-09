@@ -109,14 +109,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="google_map_wrapper" data-aos="fade-left">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.3362149737545!2d90.3866213154314!3d23.73538709526567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c6d25f0a91%3A0xf8da21d64c3856dc!2sNew%20Work%20Aquarium%20Center!5e0!3m2!1sen!2sus!4v1593765590933!5m2!1sen!2sus"
-							frameborder="0"
-							style="border: 0"
-							allowfullscreen=""
-							aria-hidden="false"
-							tabindex="0"
-						></iframe>
+						
 					</div>
 				</div>
 			</div>
