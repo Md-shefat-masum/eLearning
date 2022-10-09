@@ -1,24 +1,17 @@
 <template>
 	<div>
-		<header>
-			<ul>
-				<li>
-					<router-link :to="{name:'frontend'}">frontend</router-link>
-				</li>
-				<li>
-					<router-link :to="{name:'about'}">about</router-link>
-				</li>
-			</ul>
-		</header>
+		<frontend-header></frontend-header>
 		<router-view></router-view>
-		<footer>
-			<h1>footer</h1>
-		</footer>
+		<frontend-footer></frontend-footer>
 	</div>
 </template>
 
 <script>
-export default {};
+import FrontendHeader from './frontendHeader.vue';
+import FrontendFooter from './frontendFooter.vue';
+export default { 
+	components: { FrontendHeader, FrontendFooter } 
+};
 </script>
 
 <style></style>

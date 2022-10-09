@@ -1,0 +1,29 @@
+@import './variables.less';
+
+.border(@color: red) {
+    border: 1px solid @color;
+}
+
+.custom_scroll() {
+    overflow-y: scroll;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: @darkGreen;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: @lightGreen;
+    }
+}
