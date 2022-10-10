@@ -30,12 +30,12 @@
 									</router-link>
 								</li>
 								<li class="nav-item">
-									<router-link
+									<a
 										class="nav-link font-bangla-nav"
-										to="/about"
+										href="#features"
 									>
 										ফিচার্স
-									</router-link>
+									</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link font-bangla-nav" href="#about">
