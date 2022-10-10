@@ -196,6 +196,9 @@ export default {
 		init_jq: function () {
 			// product_slider
 			let $ = window.$;
+			let items = $(".product-slider .item");
+			$(".product-slider").html(items);
+
 			var $product_slider = $(".product-slider");
 			$product_slider.owlCarousel({
 				loop: true,

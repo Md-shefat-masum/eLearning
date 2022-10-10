@@ -185,6 +185,9 @@ export default {
 			// Product deal countdown
 			let $ = window.$;
 
+			let items = $(".deal-slider .item");
+			$(".deal-slider").html(items);
+
 			// deal_slider
 			var $deal_slider = $(".deal-slider");
 			$deal_slider.owlCarousel({
