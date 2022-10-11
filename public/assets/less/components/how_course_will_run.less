@@ -1,0 +1,20 @@
+.course_run_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	height: 400px;
+	overflow-y: scroll;
+	.custom_scrollbar();
+
+	.item {
+		display: flex;
+		gap: 20px;
+		.no {
+			font-weight: 700;
+			font-size: 28px;
+		}
+		.description {
+			font-size: 18px;
+		}
+	}
+}

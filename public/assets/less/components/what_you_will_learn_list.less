@@ -1,0 +1,27 @@
+.what_you_will_learn_list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 30px;
+
+	.item {
+        text-align: center;
+        background-color: #032055;
+        padding: 30px;
+        border-radius: 5px;
+		.img {
+			height: 100px;
+			width: 100px;
+			background-size: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 1px solid rgb(3, 3, 3);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.673);
+		}
+		.title {
+			font-size: 20px;
+		}
+	}
+}

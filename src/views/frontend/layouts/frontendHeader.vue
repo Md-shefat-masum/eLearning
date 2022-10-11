@@ -22,12 +22,12 @@
 						<div class="collapse navbar-collapse" id="mainmenu">
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item active">
-									<router-link
+									<a
 										class="nav-link font-bangla-nav"
-										to="/"
+										href="/#home"
 									>
 										হোম
-									</router-link>
+									</a>
 								</li>
 								<li class="nav-item">
 									<a
@@ -53,7 +53,7 @@
 								<li class="nav-item">
 									<a
 										class="nav-link font-bangla-nav"
-										href="#pricing"
+										href="#how-course-will-run"
 									>
 										কিভাবে চলবে
 									</a>
@@ -61,9 +61,9 @@
 								<li class="nav-item">
 									<a
 										class="nav-link font-bangla-nav"
-										href="#testimonial-area"
+										href="#what-you-will-learn"
 									>
-										কেন করবেন
+										কি কি শিখবেন
 									</a>
 								</li>
 								<li class="nav-item">

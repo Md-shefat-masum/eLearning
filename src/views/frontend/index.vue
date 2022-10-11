@@ -1,43 +1,39 @@
 <template>
 	<div>
 		<Banner></Banner>
-		<About></About>
-		<WhyBest></WhyBest>
-		<Feature></Feature>
-		<DealOfWeek></DealOfWeek>
-		<Products></Products>
-		<Video></Video>
-		<Compare></Compare>
-		<Testimonial></Testimonial>
-		<Subscribe></Subscribe>
+		<Features></Features>
+		<courseModules></courseModules>
+		<Projects></Projects>
+		<HowCourseWillRun></HowCourseWillRun>
+		<WhatYouWillLearn></WhatYouWillLearn>
 		<Faq></Faq>
+		<!-- <Video></Video> -->
+		<!-- <Compare></Compare> -->
+		<!-- <Testimonial></Testimonial> -->
+		<!-- <Subscribe></Subscribe> -->
 		<Contact></Contact>
 	</div>
 </template>
 
 <script>
 import Banner from "./home/banner.vue";
-import About from "./home/about.vue";
-import WhyBest from "./home/whyBest.vue";
-import Feature from "./home/feature.vue";
-import DealOfWeek from "./home/dealOfWeek.vue";
-import Testimonial from "./home/testimonial.vue";
-import Subscribe from "./home/subscribe.vue";
+import Features from "./home/features.vue";
+import courseModules from "./home/courseModules.vue";
+import Projects from "./home/projects.vue";
+import HowCourseWillRun from "./home/howCourseWillRun.vue";
 import Faq from "./home/faq.vue";
 import Contact from "./home/contact.vue";
-import Products from "./home/products.vue";
+import WhatYouWillLearn from "./home/whatYouWillLearn.vue";
 export default {
 	components: {
     Banner,
-    About,
-    WhyBest,
-    Feature,
-    DealOfWeek,
-    Testimonial,
-    Subscribe,
+    Features,
+    courseModules,
+    Projects,
+	HowCourseWillRun,
     Faq,
     Contact,
-    Products
+    WhatYouWillLearn
 },
 	created: function () {
 		// window.homePagePlugins();
