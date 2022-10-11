@@ -1,0 +1,32 @@
+@import url("../mixins/custom_scroll.less");
+.module_list_body {
+	border: 1px solid rgb(113, 142, 223);
+	padding: 20px;
+    padding-right: 5px;
+    border-radius: 5px;
+
+	.module_list {
+		height: 600px;
+		overflow-y: scroll;
+		.custom_scrollbar();
+        .item{
+            position: relative;
+            padding-left: 70px;
+            padding-bottom: 40px;
+            .no{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: #072b6e;
+                line-height: 40px;
+                text-align: center;
+            }
+            .title{
+                line-height: 40px;
+            }
+        }
+	}
+}

@@ -1,134 +1,29 @@
 <template>
-	<section class="whaybest">
+	<section class="whaybest" id="modules">
 		<!-- We are best Area Start -->
 		<div class="container">
-			<div class="row row-one">
-				<div class="col-lg-6 d-flex">
-					<div class="about-img">
-						<img src="assets/images/w3.png" alt="" />
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="info" data-aos="fade-left">
-						<h2 class="info-title">
-							A Watch Can Make Your Life Easy and Fast.
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8">
+					<div class="section-title extra">
+						<h2 class="title font-bangla">
+							কোর্স মডিউলে যা কিছু থাকছে
 						</h2>
-						<ul class="feature-list">
-							<li>
-								<div class="icon">
-									<i class="flaticon-alarm"></i>
-								</div>
-								<div class="content">
-									<h4>Alarm Counter</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="icon">
-									<i class="flaticon-speech-bubble"></i>
-								</div>
-								<div class="content">
-									<h4>Live Chat</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="icon">
-									<i class="flaticon-camera"></i>
-								</div>
-								<div class="content">
-									<h4>Camera</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="icon">
-									<i class="flaticon-wifi"></i>
-								</div>
-								<div class="content">
-									<h4>Support Wifi</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-						</ul>
+						<p class="font-bangla-nav">
+							৮৪ টি মডিউলে সাজানো হয়েছে কোর্সটি
+						</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="info" data-aos="fade-right">
-						<div class="round-shape"></div>
-						<h2 class="info-title">
-							A Watch Can Make Your Life Easy and Fast.
-						</h2>
-						<ul class="feature-list">
-							<li>
-								<div class="icon">
-									<i class="flaticon-alarm"></i>
-								</div>
-								<div class="content">
-									<h4>Alarm Counter</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="icon">
-									<i class="flaticon-speech-bubble"></i>
-								</div>
-								<div class="content">
-									<h4>Live Chat</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="icon">
-									<i class="flaticon-camera"></i>
-								</div>
-								<div class="content">
-									<h4>Camera</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class="icon">
-									<i class="flaticon-wifi"></i>
-								</div>
-								<div class="content">
-									<h4>Support Wifi</h4>
-									<p>
-										New had happen unable uneasy. Drawings
-										pronounce can be followed improved out.
-									</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-6 d-flex order-first order-lg-last">
-					<div class="about-img">
-						<img src="assets/images/w1.png" alt="" />
+				<div class="col-md-7">
+					<div class="module_list_body">
+						<div class="module_list">
+							<div v-for="i in 20" :key="i" class="item">
+								<div class="no">{{ i }}</div>
+								<h4 class="title">Introduction tuto</h4>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

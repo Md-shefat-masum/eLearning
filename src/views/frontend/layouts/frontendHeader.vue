@@ -38,7 +38,7 @@
 									</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link font-bangla-nav" href="#about">
+									<a class="nav-link font-bangla-nav" href="#modules">
 										মডিউলস
 									</a>
 								</li>
