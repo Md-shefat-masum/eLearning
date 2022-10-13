@@ -1,37 +1,16 @@
 <template>
 	<div>
-		<header>
-			<a href="" class="" id=""> hi </a>
-			<ul>
-				<li>
-					<router-link :to="{ name: 'dashboard' }">
-						dashboard
-					</router-link>
-				</li>
-				<li>
-					<router-link :to="{ name: 'dashboardSettings' }">
-						settings
-					</router-link>
-				</li>
-			</ul>
-		</header>
+		<backend-header></backend-header>
 		<router-view></router-view>
-		<footer>
-			<h1>footer</h1>
-		</footer>
+		<backend-footer></backend-footer>
 	</div>
 </template>
 
 <script>
-export default {
-	data: function () {
-		return {};
-	},
-	methods: {
-		get_all: function () {
-			return "ok";
-		},
-	},
+import BackendHeader from './backendHeader.vue';
+import BackendFooter from './backendFooter.vue';
+export default { 
+	components: { BackendHeader, BackendFooter } 
 };
 </script>
 

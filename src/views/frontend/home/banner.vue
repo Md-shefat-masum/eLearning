@@ -46,7 +46,7 @@
 						<div class="discount-circle">
 							<div class="discount-circle-inner">
 								<div class="price">
-									50%
+									20%
 									<span>Off</span>
 								</div>
 							</div>

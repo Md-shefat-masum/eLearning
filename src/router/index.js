@@ -22,8 +22,8 @@ const router = createRouter({
 	routes,
 });
 
-router.afterEach((to, from) => {
-	console.log(to, from);
+router.afterEach(() => {
+	// console.log(to, from);
 	setTimeout(() => {
 		window.allPagePlugins();
 	}, 600);
