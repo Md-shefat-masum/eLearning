@@ -23,11 +23,11 @@
 							<div v-if="modules.length">
 								<div
 									v-for="(item, index) in modules"
-									:key="item.title"
+									:key="index"
 									class="item"
 								>
 									<div class="no">{{ index + 1 }}</div>
-									<h4 class="title">{{ item.title }}</h4>
+									<h4 class="title">{{ item }}</h4>
 								</div>
 							</div>
 
@@ -44,7 +44,7 @@
 					</div>
 				</div>
 				<div class="col-lg-5 flex_full_center">
-					<div class="module_image" style="background-image: url('assets/images/modules.png');">
+					<div class="module_image" style="background-image: url('/assets/images/modules.png');">
 						<!-- <img src="assets/images/modules.png" alt=""> -->
 					</div>
 				</div>
@@ -66,7 +66,7 @@ export default {
 	},
 	methods: {
 		get_modules: function () {
-			fetch("https://techparkit.org/api/modules")
+			fetch("https://techparkit.org/api/v1/course-module")
 				.then((res) => res.json())
 				.then((res) => {
 					this.modules = res;

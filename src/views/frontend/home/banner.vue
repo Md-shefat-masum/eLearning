@@ -34,9 +34,9 @@
 								</span>
 							</p>
 							<div class="links">
-								<a href="#" class="mybtn3 mybtn-light">
+								<router-link to="/enroll" class="mybtn3 mybtn-light">
 									<span>Enroll Now</span>
-								</a>
+								</router-link>
 							</div>
 						</div>
 					</div>

@@ -4,13 +4,26 @@ import { createApp } from "vue";
 // window.$ = $;
 
 window.axios = require("axios");
-window.axios.default.baseURL = `${process.env.VUE_APP_MY_SERVER_BASE_API}`;
+window.axios.default.defaults.baseURL = `${process.env.VUE_APP_MY_SERVER_BASE_API}`;
 
-window.axios.default.interceptors?.request.use(function (config) {
-	// Do something before request is sent
+function form_before_action(){
+	window.Pace.restart();
 	let $ = window.$;
 	$(`input`).siblings(".text-danger").remove();
 	$(`textarea`).siblings(".text-danger").remove();
+	$(`form`).addClass('loading');
+	$(`form button[type='submit']`).prop('disabled',true);
+}
+function form_after_action(){
+	let $ = window.$;
+	$(`input`).siblings(".text-danger").remove();
+	$(`textarea`).siblings(".text-danger").remove();
+	$(`form`).removeClass('loading');
+	$(`form button[type='submit']`).prop('disabled',false);
+}
+window.axios.default.interceptors?.request.use(function (config) {
+	// Do something before request is sent
+	form_before_action();
 	return config;
 }, function (error) {
 	// Do something with request error
@@ -19,15 +32,15 @@ window.axios.default.interceptors?.request.use(function (config) {
 
 window.axios.default.interceptors.response.use(
 	(response) => {
+		form_after_action();
 		return response;
 	},
 	(error) => {
 		// whatever you want to do with the error
 		// console.log(error.response.data.errors);
 		let $ = window.$;
-		let object = error.response.data.data;
-		$(`input`).siblings(".text-danger").remove();
-		$(`textarea`).siblings(".text-danger").remove();
+		let object = error.response?.data?.data;
+		form_after_action();
 
 		for (const key in object) {
 			if (Object.hasOwnProperty.call(object, key)) {

@@ -13,8 +13,12 @@
 			border: 1px solid white;
 			border-radius: 50%;
 			overflow: hidden;
-			padding: 3px;
+			background-image: url("/assets/images/profile.jpg");
+			background-size: cover;
+			background-position: center;
 			img {
+				background-color: white;
+				padding: 3px;
 				width: 100%;
 				border-radius: 50%;
 				cursor: pointer;
@@ -24,14 +28,14 @@
 		&:hover {
 			.drop_down_menu {
 				top: 123%;
-                opacity: 1;
-                visibility: visible;
-                z-index: 99;
+				opacity: 1;
+				visibility: visible;
+				z-index: 99;
 			}
 		}
 		.drop_down_menu {
-            opacity: 0;
-            visibility: hidden;
+			opacity: 0;
+			visibility: hidden;
 			position: absolute;
 			right: 0;
 			background-color: #002151;
@@ -39,15 +43,24 @@
 			padding: 25px;
 			border-radius: 5px;
 			top: 300%;
-            transition: all linear .3s;
+			transition: all linear 0.3s;
 			.top {
 				text-align: center;
 				border-bottom: 1px solid rgba(255, 255, 255, 0.642);
 				padding-bottom: 15px;
-				img {
+				.img {
 					height: 100px;
 					width: 100px;
 					border-radius: 50%;
+					background-image: url("/assets/images/profile.jpg");
+					background-size: cover;
+					background-position: center;
+					margin: auto;
+					overflow: hidden;
+					img {
+						width: 100%;
+						background-color: white;
+					}
 				}
 				h2 {
 					font-size: 22px;

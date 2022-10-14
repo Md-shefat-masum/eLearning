@@ -1,44 +1,7 @@
 $(function ($) {
 	"use strict";
 
-	init_pointer({});
 	var $window = $(window);
-
-	window.homePagePlugins = function () {
-		// magnific popup activation
-		$(".video-play-btn").magnificPopup({
-			type: "video",
-		});
-
-		$(".img-popup").magnificPopup({
-			type: "image",
-		});
-
-		// twitte-slider
-		// var $twitte_slider = $(".twitte-slider");
-		// $twitte_slider.owlCarousel({
-		// 	loop: true,
-		// 	nav: true,
-		// 	navText: [
-		// 		'<i class="fa fa-angle-left"></i>',
-		// 		'<i class="fa fa-angle-right"></i>',
-		// 	],
-		// 	dots: false,
-		// 	margin: 30,
-		// 	autoplay: true,
-		// 	center: true,
-		// 	autoplayTimeout: 2500,
-		// 	smartSpeed: 1500,
-		// 	responsive: {
-		// 		0: {
-		// 			items: 1,
-		// 		},
-		// 		576: {
-		// 			items: 1,
-		// 		},
-		// 	},
-		// });
-	};
 
 	window.allPagePlugins = function () {
 		/* Offset start */
@@ -105,12 +68,5 @@ $(function ($) {
 	};
 
 	window.allPagePlugins();
-	window.homePagePlugins();
 
-	//  preloader js start
-	$window.on("load", function () {
-		setTimeout(function () {
-			$("#preloader").fadeOut("slow", function () {});
-		}, 600);
-	});
 });

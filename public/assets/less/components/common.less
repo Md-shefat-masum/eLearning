@@ -31,13 +31,44 @@
 	font-weight: bold;
 }
 
-.bangla-pg{
+.bangla-pg {
 	font-size: 22px;
 }
 .bangla-heading {
 	font-size: 50px;
 }
 
-.bigbtn.font-bangla{
+.bigbtn.font-bangla {
 	font-size: 24px;
+}
+
+.bg-light-dark {
+	background-color: #032055 !important;
+}
+
+form.loading {
+	button.btn[type="submit"] {
+		position: relative;
+		overflow: hidden;
+		padding-left: 80px;
+		transition: all linear .3s;
+		&::before {
+			position: absolute;
+			content: 'Submitting..';
+			line-height: 35px;
+			height: 100%;
+			width: 100%;
+			z-index: 9999;
+			background: url("/assets/images/loader.gif") rgba(0,0,0,.4);
+			background-size: contain;
+			background-repeat: no-repeat;
+			color: black;
+			background-color: white;
+			text-align: right;
+			padding-right: 10px;
+			// mix-blend-mode: multiply;
+			top: 0;
+			left: 0;
+		}
+	}
 }

@@ -1,0 +1,56 @@
+.course_list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 30px;
+	.course_item {
+		background-color: #032055;
+		border-radius: 15px;
+		display: flex;
+		gap: 30px;
+		padding: 15px;
+		box-sizing: border-box;
+		.left {
+			width: 200px;
+            display: grid;
+            align-content: center;
+			img {
+				border-radius: 15px;
+			}
+		}
+		.right {
+			flex: 1;
+			h2 {
+				font-size: 20px;
+			}
+			h3 {
+				font-size: 16px;
+			}
+			.progress_body {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+                margin: 10px 0px 15px;
+				.progress_bar {
+					flex: 1;
+					background: white;
+					border-radius: 25px;
+					padding: 7px;
+					position: relative;
+					.progress_fill {
+						position: absolute;
+						background-color: #2f4d82;
+                        box-shadow: inset 0px 0px 10px black;
+						border-radius: 25px;
+						top: 0;
+						left: -1px;
+						height: 100%;
+						width: 0%;
+					}
+				}
+				.percent {
+					width: 50px;
+				}
+			}
+		}
+	}
+}

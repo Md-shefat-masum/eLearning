@@ -1,8 +1,10 @@
 import frontendLayout from "../views/frontend/layouts/frontendLayout";
 import frontend from "../views/frontend/index";
 import about from "../views/frontend/about";
+import enroll from "../views/frontend/enroll";
 import login from "../views/frontend/auth/login";
 import register from "../views/frontend/auth/register";
+import forgetPassword from "../views/frontend/auth/forgetPassword";
 
 const FrontendRouter = {
 	path: "/",
@@ -19,6 +21,11 @@ const FrontendRouter = {
 			component: about,
 		},
 		{
+			path: "enroll",
+			name: "enroll",
+			component: enroll,
+		},
+		{
 			path: "login",
 			name: "login",
 			component: login,
@@ -29,9 +36,9 @@ const FrontendRouter = {
 			component: register,
 		},
 		{
-			path: "forget",
-			name: "forget",
-			component: <template>forget</template>,
+			path: "forget-password",
+			name: "forgetPassword",
+			component: forgetPassword,
 		},
 	],
 };

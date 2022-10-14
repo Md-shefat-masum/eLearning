@@ -1,6 +1,6 @@
 import dashboardLayout from "../views/backend/layouts/backendLayout";
 import dashboard from "../views/backend/index";
-import dashboardSettings from "../views/backend/settings";
+import dashboardProfile from "../views/backend/profile";
 
 const BackendRouter = {
 	path: "/dashboard",
@@ -12,9 +12,9 @@ const BackendRouter = {
 			component: dashboard,
 		},
 		{
-			path: "",
-			name: "dashboardSettings",
-			component: dashboardSettings,
+			path: "profile",
+			name: "dashboardProfile",
+			component: dashboardProfile,
 		},
 	],
 };

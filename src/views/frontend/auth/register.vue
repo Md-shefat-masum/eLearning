@@ -63,7 +63,7 @@
 							</div>
 							<div class="custom-control custom-checkbox d-flex">
 								<span class="ml-auto font-bangla">
-									<router-link to="/forget">
+									<router-link to="/forget-password">
 										পাসওয়ার্ড ভুলে গেছেন?
 									</router-link>
 								</span>

@@ -2,7 +2,7 @@
 	<div>
 		<!-- Footer Section Start -->
 		<footer class="footer" id="footer">
-			<img class="shape" src="assets/images/shape-pattern.png" alt="" />
+			<img class="shape" src="/assets/images/shape-pattern.png" alt="" />
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-6">
@@ -10,7 +10,7 @@
 							<div class="footer-logo">
 								<a href="#" class="logo-link">
 									<img
-										src="assets/images/tp-logo.png"
+										src="/assets/images/tp-logo.png"
 										alt=""
 									/>
 								</a>
