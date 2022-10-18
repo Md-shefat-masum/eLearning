@@ -20,10 +20,34 @@
 							<!-- <span>Comming soon</span> -->
 							<span class="days"></span><span>:</span>
 							<span class="hours"></span><span>:</span>
-							<span class="minutes"></span><span>:</span> 
+							<span class="minutes"></span><span>:</span>
 							<span class="seconds"></span>
 							<span>Days</span>
 						</a>
+					</div>
+				</div>
+				<div class="course_item">
+					<div class="left">
+						<img src="assets/images/blog/img4.png" alt="" />
+					</div>
+					<div class="right">
+						<h2>HTML CSS crush course</h2>
+						<h3>Muhammad Shefat Ullah</h3>
+						<div class="progress_body">
+							<div class="progress_bar">
+								<div class="progress_fill"></div>
+							</div>
+							<div class="percent">0%</div>
+						</div>
+						<router-link
+							:to="{
+								name: 'dashboardCourseDetails',
+								params: { slug: 'html' },
+							}"
+							class="mybtn3 mybtn-light"
+						>
+							<span>Continue Course</span>
+						</router-link>
 					</div>
 				</div>
 			</div>
@@ -81,8 +105,11 @@ export default {
 			function displayTimeLeft(seconds) {
 				daysElement.innerHTML = Math.floor(seconds / 86400);
 				hoursElement.innerHTML = Math.floor((seconds % 86400) / 3600);
-				minutesElement.innerHTML = Math.floor((seconds % 86400) % 3600 / 60);
-				secondsElement.innerHTML = seconds % 60 < 10 ? `0${seconds % 60}` : seconds % 60;
+				minutesElement.innerHTML = Math.floor(
+					((seconds % 86400) % 3600) / 60
+				);
+				secondsElement.innerHTML =
+					seconds % 60 < 10 ? `0${seconds % 60}` : seconds % 60;
 			}
 		},
 	},
