@@ -19,7 +19,7 @@ const BackendRouter = {
 			component: dashboardProfile,
 		},
 		{
-			path: "/course-details/:slug",
+			path: "/course-details/:id/:slug",
 			name: "dashboardCourseDetails",
 			component: dashboardCourseDetails,
 		},

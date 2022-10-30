@@ -1,18 +1,17 @@
 .course_list {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 30px;
 	.course_item {
 		background-color: #032055;
 		border-radius: 15px;
-		display: flex;
+		display: grid;
 		gap: 30px;
 		padding: 15px;
 		box-sizing: border-box;
 		.left {
-			width: 200px;
-            display: grid;
-            align-content: center;
+			display: grid;
+			align-content: center;
 			img {
 				border-radius: 15px;
 			}
@@ -29,26 +28,45 @@
 				display: flex;
 				align-items: center;
 				gap: 10px;
-                margin: 10px 0px 15px;
+				margin: 10px 0px 15px;
 				.progress_bar {
 					flex: 1;
-					background: white;
+					background: rgba(255, 255, 255, 0.633);
 					border-radius: 25px;
 					padding: 7px;
 					position: relative;
 					.progress_fill {
 						position: absolute;
-						background-color: #2f4d82;
-                        box-shadow: inset 0px 0px 10px black;
+						background: rgb(98, 66, 120);
+						background: linear-gradient(90deg, #575757 0%, #9c2f2f 50%, #d016a9 100%);
+						// box-shadow: inset 0px 0px 10px black;
 						border-radius: 25px;
 						top: 0;
-						left: -1px;
+						left: 0px;
 						height: 100%;
 						width: 0%;
 					}
 				}
 				.percent {
 					width: 50px;
+				}
+			}
+			.task_report {
+				li {
+					padding: 5px 0px;
+					i {
+						display: inline-block;
+						width: 25px;
+					}
+					.task_name {
+						width: 180px;
+						display: inline-block;
+					}
+					.avg {
+						width: 80px;
+						text-align: center;
+						display: inline-block;
+					}
 				}
 			}
 		}

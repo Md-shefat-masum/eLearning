@@ -5,6 +5,7 @@ import {
 // import createPersistedState from "vuex-persistedstate";
 
 import auth_store from './modules/auth_store';
+import course_store from './modules/course_store';
 
 export default createStore({
     state: {},
@@ -12,6 +13,7 @@ export default createStore({
     actions: {},
     modules: {
         auth_store,
+		course_store,
     },
     // plugins: [createPersistedState()],
 });
