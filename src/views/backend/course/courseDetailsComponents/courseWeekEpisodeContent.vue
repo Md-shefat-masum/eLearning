@@ -1,12 +1,8 @@
 <template>
 	<div>
-		<i
-			v-if="content.course_task_completions.length"
-			class="far fa-check-circle watched yes"
-		></i>
-		<i v-else class="far fa-times-circle watched not"></i>
+		<i class="far fa-play-circle watched not"></i>
 		<a
-			@click="watch_video(content, $event.target)"
+			@click.prevent="watch_video(content, $event.target)"
 			class="video_link_btn"
 			:class="{
 				active: content.content === get_course_content.video_url,
@@ -15,12 +11,20 @@
 		>
 			{{ content.title }}
 		</a>
+		<i
+			v-if="content.course_task_completions.length"
+			class="far fa-check-circle watched yes"
+		></i>
+		<i
+			v-else
+			class="far fa-check-circle watched pending"
+		></i>
 	</div>
 </template>
 
 <script>
 import axios from "axios";
-import { mapActions, mapGetters } from "vuex";
+import { mapActions, mapGetters, mapMutations } from "vuex";
 export default {
 	props: ["content"],
 	created: function () {
@@ -32,24 +36,24 @@ export default {
 		get_course_content: {
 			handler: function () {
 				setTimeout(() => {
-					this.init_jq();
+					// this.init_jq();
 				}, 300);
 			},
 		},
 	},
 	methods: {
 		...mapActions(["fetch_course_content"]),
+		...mapMutations(['set_selected_content_type']),
 		fetch_content: function () {
 			this.fetch_course_content({ batch_id: this.$route.params.id });
 		},
 		watch_video: function (content, target) {
 			document
-				.querySelectorAll(".video_link_btn")
+				.querySelectorAll(".video_link_li a")
 				.forEach((i) => i.classList.remove("active"));
 			target.classList.add("active");
-			this.selected_video = content.content;
-			this.selected_content_type = content.type;
 			this.add_to_completed_task(content);
+			this.set_selected_content_type('video');
 		},
 		add_to_completed_task: function (content) {
 			axios
@@ -57,12 +61,12 @@ export default {
 					class_module_video_id: content.id,
 					watching_video_id: this.watching_video_id,
 				})
-				.then((res) => {
+				.then(() => {
 					// if (res.data != "ok") {
 					// 	content.course_task_completions.push(res.data);
 					// }
 					this.fetch_content();
-					console.log(res.data);
+					// console.log(res.data);
 				});
 		},
 		init_jq: function () {
@@ -75,11 +79,30 @@ export default {
 					.parent("ul")
 					.parent("li.module_list_items")
 					.addClass("active");
+
+				$(".video_link_btn.active")
+					.parent("div")
+					.parent("li")
+					.parent("ul")
+					.parent("li.module_list_items")
+					.siblings("li.module_name")
+					.addClass("active");
+
 				$(".video_link_btn.active")[0].scrollIntoView({
-					behavior: "smooth",
+					behavior: 'smooth',
+					// start, center, end, or nearest. Defaults to start.
 					block: "center",
-					inline: "nearest",
+					// start, center, end, or nearest. Defaults to nearest.
+					inline: "start",
 				});
+
+				setTimeout(() => {
+					$("html")[0].scrollTo({
+						top: 0,
+						left: 0,
+						behavior: 'smooth',
+					})
+				}, 1000);
 			}
 
 			// $(".quiz_btn").on("click", function (e) {

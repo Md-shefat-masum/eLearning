@@ -1,7 +1,11 @@
 <template>
 	<div>
-		<h5 class="mb-1">{{ get_course_content.modules[0].title }}</h5>
-		<div class="py-3 mb-1">
+		<h5 class="progress_heading">
+			Video watched: 
+			{{ get_course_content.course_report.total_videos_complete }} /
+			{{ get_course_content.course_report.total_videos }} 
+		</h5>
+		<div class="pb-3 pt-2 mb-1">
 			<div class="progress">
 				<div
 					class="progress-bar"
@@ -14,6 +18,9 @@
 					{{ get_course_content.course_report.avg }}%
 				</div>
 			</div>
+			<p class="progress_p">
+				To obtain a certificate, you must complete all modules.
+			</p>
 		</div>
 	</div>
 </template>

@@ -29,6 +29,7 @@
 				align-items: center;
 				gap: 10px;
 				margin: 10px 0px 15px;
+				justify-content: space-between;
 				.progress_bar {
 					flex: 1;
 					background: rgba(255, 255, 255, 0.633);
@@ -48,12 +49,15 @@
 					}
 				}
 				.percent {
-					width: 50px;
+					// width: 50px;
+					display: inline-block;
 				}
 			}
 			.task_report {
+				display: inline-block;
 				li {
 					padding: 5px 0px;
+					text-align: left;
 					i {
 						display: inline-block;
 						width: 25px;
@@ -61,10 +65,11 @@
 					.task_name {
 						width: 180px;
 						display: inline-block;
+						text-transform: capitalize;
 					}
 					.avg {
 						width: 80px;
-						text-align: center;
+						text-align: right;
 						display: inline-block;
 					}
 				}

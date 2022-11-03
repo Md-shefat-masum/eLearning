@@ -43,35 +43,39 @@
 							</div>
 							<div class="percent">{{course.avg}}%</div>
 						</div>
-						<ul class="task_report">
-							<li>
-								<i class="fa fa-video"></i> 
-								<span class="task_name">video watched:</span> 
-								<span class="avg">{{course.total_videos_complete}} / {{course.total_videos}}</span> 
-							</li>
-							<li>
-								<i class="fa fa-cubes"></i> 
-								<span class="task_name">quiz completed:</span> 
-								<span class="avg">{{course.total_quizes_complete}} / {{course.total_quizes}}</span>
-							</li>
-							<li>
-								<i class="fa fa-tasks"></i> 
-								<span class="task_name">project submitted:</span> 
-								<span class="avg">{{course.total_projects_complete}} / {{course.total_projects}}</span>
-							</li>
-							<li>
-								<i class="fa fa-project-diagram"></i> 
-								<span class="task_name">Assignment submitted:</span>  
-								<span class="avg">{{course.total_assignments_complete}} / {{course.total_assignments}}</span>
-							</li>
-						</ul>
-						<a
-							:href="`/course-details/${course.id}/${course.title.toLocaleLowerCase()}`"
-							@click.prevent="load_course_content(course)"
-							class="mybtn3 mybtn-light"
-						>
-							<span>Continue Course</span>
-						</a>
+						<div class="text-center">
+							<ul class="task_report">
+								<li>
+									<i class="far fa-play-circle"></i>
+									<span class="task_name">video watched:</span> 
+									<span class="avg">{{course.total_videos_complete}} / {{course.total_videos}}</span> 
+								</li>
+								<li>
+									<i class="fa fa-stopwatch"></i> 
+									<span class="task_name">quiz completed:</span> 
+									<span class="avg">{{course.total_quizes_complete}} / {{course.total_quizes}}</span>
+								</li>
+								<li>
+									<i class="fa fa-tasks"></i> 
+									<span class="task_name">project submitted:</span> 
+									<span class="avg">{{course.total_projects_complete}} / {{course.total_projects}}</span>
+								</li>
+								<li>
+									<i class="fa fa-book"></i> 
+									<span class="task_name">Assignment submitted:</span>  
+									<span class="avg">{{course.total_assignments_complete}} / {{course.total_assignments}}</span>
+								</li>
+							</ul>
+						</div>
+						<div class="text-center">
+							<a
+								:href="`/course-details/${course.id}/${course.title.toLocaleLowerCase()}`"
+								@click.prevent="load_course_content(course)"
+								class="mybtn3 mybtn-light px-3"
+							>
+								<span>Continue Course</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

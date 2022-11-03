@@ -2,10 +2,10 @@
 	<div>
 		<li
 			class="module_name"
-			@click="toggle_module_list"
+			@click="toggle_module_list($event.currentTarget)"
 			:data-toggle_target="`.list_module_1`"
 		>
-			<a href="#">
+			<a @click.prevent="()=>{}" href="#">
 				{{ episode.title }}
 			</a>
 		</li>
@@ -36,8 +36,10 @@ export default {
 	components: { courseWeekEpisodeContent, CourseWeekEpisodeQuiz, CourseWeekEpisodeProject },
 	props: ["episode"],
 	methods: {
-		toggle_module_list: function () {
+		toggle_module_list: function (target) {
+			target.classList.toggle('active');
 			this.$refs.module_list.classList.toggle("active");
+			// this.$refs.module_list.parentNode.classList.toggle("active");
 		},
 	},
 };
