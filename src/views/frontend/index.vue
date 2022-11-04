@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<Banner></Banner>
+		<free-course></free-course>
 		<Features></Features>
 		<courseModules></courseModules>
 		<Projects></Projects>
@@ -24,6 +25,7 @@ import HowCourseWillRun from "./home/howCourseWillRun.vue";
 import Faq from "./home/faq.vue";
 import Contact from "./home/contact.vue";
 import WhatYouWillLearn from "./home/whatYouWillLearn.vue";
+import FreeCourse from './home/freeCourse.vue';
 export default {
 	components: {
     Banner,
@@ -33,7 +35,8 @@ export default {
 	HowCourseWillRun,
     Faq,
     Contact,
-    WhatYouWillLearn
+    WhatYouWillLearn,
+FreeCourse
 },
 	created: function () {
 		// window.homePagePlugins();

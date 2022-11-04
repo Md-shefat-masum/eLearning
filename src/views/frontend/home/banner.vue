@@ -34,8 +34,18 @@
 								</span>
 							</p>
 							<div class="links">
-								<router-link to="/enroll" class="mybtn3 mybtn-light">
+								<!-- <router-link to="/enroll" class="mybtn3 mybtn-light">
 									<span>Enroll Now</span>
+								</router-link> -->
+								<router-link v-if="get_check_auth_status === false" to="/register" class="mybtn3 mybtn-light font-bangla font-bold">
+									<span>
+										<b>কোর্স এনরোল করতে রেজিস্ট্রেশন করুন</b>
+									</span>
+								</router-link>
+								<router-link v-if="get_check_auth_status" to="/dashboard" class="mybtn3 mybtn-light font-bangla font-bold">
+									<span>
+										<b>ড্যাশবোর্ড দেখুন</b>
+									</span>
 								</router-link>
 							</div>
 						</div>
@@ -111,7 +121,12 @@
 </template>
 
 <script>
-export default {};
+import { mapGetters } from 'vuex';
+export default {
+	computed: {
+		...mapGetters(['get_check_auth_status'])
+	}
+};
 </script>
 
 <style></style>

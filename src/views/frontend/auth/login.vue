@@ -56,6 +56,16 @@
 <script>
 import { mapActions, mapGetters } from "vuex";
 export default {
+	created: function(){
+		setTimeout(() => {
+			let $ = window.$;
+			$("html")[0].scrollTo({
+				top: 0,
+				left: 0,
+				behavior: "smooth",
+			});
+		}, 100);
+	},
 	watch:{
 		get_check_auth_status: {
 			handler: function(newV){

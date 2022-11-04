@@ -12,7 +12,11 @@
 								লগইন তথ্য শেয়ার করা থেকে বিরত থাকুন
 							</p>
 						</div>
-						<form class="form-group mb-0" @submit.prevent="register($event.target)" action="#">
+						<form
+							class="form-group mb-0"
+							@submit.prevent="register($event.target)"
+							action="#"
+						>
 							<div class="form-group">
 								<label for="" class="font-bangla">
 									আপনার সম্পূর্ণ নাম
@@ -89,10 +93,36 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
+	created: function () {
+		if (this.get_check_auth_status) {
+			this.$router.replace("/dashboard");
+		}
+
+		setTimeout(() => {
+			let $ = window.$;
+			$("html")[0].scrollTo({
+				top: 0,
+				left: 0,
+				behavior: "smooth",
+			});
+		}, 100);
+	},
+	watch: {
+		get_check_auth_status: {
+			handler: function (newV) {
+				if (newV === true) {
+					this.$router.replace("/");
+				}
+			},
+		},
+	},
 	methods: {
-		...mapActions(["register",]),
+		...mapActions(["register"]),
+	},
+	computed: {
+		...mapGetters(["get_check_auth_status"]),
 	},
 };
 </script>

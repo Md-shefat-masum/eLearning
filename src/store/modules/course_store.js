@@ -40,6 +40,13 @@ const getters = {
 
 // action
 const actions = {
+	fetch_enroll_course: async function(state, {batch_id}){
+		await axios.post(`/course/enroll`,{batch_id})
+		.then(() => {
+			// this.commit('set_user_courses', data);
+		});
+	},
+
 	fetch_user_courses: function () {
 		axios.get(`/course/list`)
 			.then(({ data }) => {
