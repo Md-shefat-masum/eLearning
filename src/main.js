@@ -39,7 +39,7 @@ window.axios.default.interceptors.response.use(
 		// whatever you want to do with the error
 		// console.log(error.response.data.errors);
 		let $ = window.$;
-		let object = error.response?.data?.data;
+		let object = error.response?.data?.data || error.response.data.errors;
 		form_after_action();
 
 		for (const key in object) {

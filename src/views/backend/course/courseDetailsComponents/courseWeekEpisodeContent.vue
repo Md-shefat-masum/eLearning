@@ -4,6 +4,8 @@
 		<a
 			@click.prevent="watch_video(content, $event.target)"
 			class="video_link_btn"
+			:data-title="content.title"
+			:data-content_id="content.id"
 			:class="{
 				active: content.content === get_course_content.video_url,
 			}"
@@ -23,7 +25,7 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 import { mapActions, mapGetters, mapMutations } from "vuex";
 export default {
 	props: ["content"],
@@ -42,8 +44,8 @@ export default {
 		},
 	},
 	methods: {
-		...mapActions(["fetch_course_content"]),
-		...mapMutations(['set_selected_content_type']),
+		...mapActions(["fetch_course_content","add_to_completed_task"]),
+		...mapMutations(['set_selected_content_type','set_selected_content']),
 		fetch_content: function () {
 			this.fetch_course_content({ batch_id: this.$route.params.id });
 		},
@@ -53,21 +55,8 @@ export default {
 				.forEach((i) => i.classList.remove("active"));
 			target.classList.add("active");
 			this.add_to_completed_task(content);
+			this.set_selected_content(content);
 			this.set_selected_content_type('video');
-		},
-		add_to_completed_task: function (content) {
-			axios
-				.post(`/course/module-video-watch/set-to-watch-list`, {
-					class_module_video_id: content.id,
-					watching_video_id: this.watching_video_id,
-				})
-				.then(() => {
-					// if (res.data != "ok") {
-					// 	content.course_task_completions.push(res.data);
-					// }
-					this.fetch_content();
-					// console.log(res.data);
-				});
 		},
 		init_jq: function () {
 			let $ = window.$;

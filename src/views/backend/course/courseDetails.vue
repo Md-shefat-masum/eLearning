@@ -9,16 +9,9 @@
 								class="iframe-parent-class"
 								style="height: auto"
 							>
-								<iframe
-									v-if="get_selected_content_type == 'video'"
-									id="video_player"
-									class="iframe_player"
-									:src="get_selected_video"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen=""
-								>
-								</iframe>
+								<video-player-body v-if="get_selected_content_type == 'video'"></video-player-body>
 								<quiz-body v-if="get_selected_content_type == 'quiz'"></quiz-body>
+								<project-body v-if="get_selected_content_type == 'project'"></project-body>
 							</div>
 						</div>
 
@@ -42,10 +35,12 @@
 import { mapActions, mapGetters, mapMutations } from "vuex";
 import courseHeadingProgress from './courseDetailsComponents/courseHeadingProgress.vue';
 import CourseModule from './courseDetailsComponents/courseModule.vue';
+import ProjectBody from './courseDetailsComponents/projectBody.vue';
 import QuizBody from './courseDetailsComponents/quizBody.vue';
+import VideoPlayerBody from './courseDetailsComponents/videoPlayerBody.vue';
 
 export default {
-    components: { courseHeadingProgress, CourseModule, QuizBody },
+    components: { courseHeadingProgress, CourseModule, QuizBody, ProjectBody, VideoPlayerBody },
 	created: function () {
 		document.querySelectorAll('body')[0].scrollIntoView();
 		

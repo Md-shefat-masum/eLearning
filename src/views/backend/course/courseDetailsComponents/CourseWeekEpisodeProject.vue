@@ -9,7 +9,8 @@
 			>
 				project - {{ project.title }}
 			</a>
-			<i class="far fa-check-circle watched pending"></i>
+			<i v-if="project.course_task_completions.length" class="far fa-check-circle watched yes"></i>
+			<i v-else class="far fa-check-circle watched pending"></i>
 			
 		</div>
 	</li>
@@ -23,7 +24,7 @@ export default {
 		// console.log(this.quizzes);
 	},
 	methods: {
-		...mapMutations(['set_selected_content_type']),
+		...mapMutations(['set_selected_content_type','set_selected_homework']),
 		load_project: function(project, target){
 			document
 				.querySelectorAll(".video_link_li a")
@@ -31,6 +32,7 @@ export default {
 			target.classList.add("active");
 
 			this.set_selected_content_type('project')
+			this.set_selected_homework(project)
 		}
 	}
 };

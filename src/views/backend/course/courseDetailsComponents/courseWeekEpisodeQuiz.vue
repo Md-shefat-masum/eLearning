@@ -11,7 +11,7 @@
 				Quiz {{ quiz.quiz_no }} - {{ quiz.title }}
 			</a>
 			<i v-if="quiz.course_task_completions.length" class="far fa-check-circle watched yes"></i>
-			<i v-else class="fa fa-stopwatch watched pending"></i>
+			<i v-else class="far fa-check-circle watched pending"></i>
 		</div>
 	</li>
 </template>

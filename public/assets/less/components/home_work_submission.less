@@ -1,0 +1,74 @@
+:root {
+	--project_card_bg: #0f172a;
+	--input_bg: #22293a;
+}
+
+.project_card_bg {
+	background-color: var(--project_card_bg);
+}
+
+.project_description {
+	h3 {
+		font-size: 22px;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+	}
+
+	h4 {
+		font-size: 18px;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+	}
+
+	.text_instruction {
+		ol {
+			list-style-type: decimal-leading-zero;
+			li {
+				list-style: unset;
+			}
+		}
+	}
+}
+
+.project_submission_form {
+	max-width: 600px;
+	margin: auto;
+
+	h3 {
+		font-size: 22px;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+	}
+
+	input,
+	textarea {
+		background-color: var(--input_bg);
+		color: white;
+	}
+}
+
+.project_submissions {
+	&:last-child {
+		ul {
+			border-bottom: 0;
+		}
+	}
+	ul {
+		border-bottom: 1px solid white;
+		li {
+			margin-bottom: 10px;
+			flex-wrap: wrap;
+			span {
+				width: 120px;
+				font-weight: bold;
+			}
+            
+			a {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+                flex: 1;
+			}
+		}
+	}
+}

@@ -14,7 +14,7 @@
 				<course-week-episode :episode="episode"></course-week-episode>
 			</ul>
 		</li>
-		<li class="video_link_li mb-3 ms-3">
+		<li class="video_link_li mb-3 ms-3 d-none">
 			<i></i>
 			<a
 				class="assignment_btn"
