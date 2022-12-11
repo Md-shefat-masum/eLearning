@@ -60,7 +60,7 @@ const actions = {
 		let data = await res.data;
 		await this.commit('set_course_content', data);
 		await this.commit('set_selected_video', data.video_url);
-		console.log(data, batch_id);
+		// console.log(data, batch_id);
 	},
 
 	fetch_submit_quiz: function (state) {
@@ -69,7 +69,7 @@ const actions = {
 		axios.post('/course/quiz/api-quiz-submission', {
 			submissions,
 			selected_quiz_id: state.getters.get_selected_quiz.id,
-			quiz: state.getters.get_selected_quiz,
+			// quiz: state.getters.get_selected_quiz,
 		})
 			.then(async (res) => {
 				// console.log(res.data);

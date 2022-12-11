@@ -41,7 +41,7 @@ export default {
 		},
 	},
 	created: function () {
-		// console.log(this.isInQuizAttended, this.isQuizCorrectAnswer);
+		// console.log(this.isInQuizAttended, this.isQuizCorrectAnswer, this.isSubmittedAnswerIsCorrect, this.get_selected_quiz_question);
 	},
 	methods: {
 		select_option: function (event) {
@@ -62,14 +62,14 @@ export default {
 			return false;
 		},
 		isInQuizAttended: function () {
-			console.log(this.get_selected_quiz_question);
+			// console.log(this.get_selected_quiz_question);
 			let selected_quiz_question_submissions = this.get_selected_quiz_question.course_batch_season_week_episode_quiz_submissions;
 			let check = false;
 			if(Array.isArray(selected_quiz_question_submissions) ){
 				selected_quiz_question_submissions.forEach(e=>{
-					if(e.submitted_answer_id === this.option.id){
+					if(parseInt(e.submitted_answer_id) === this.option.id){
 						check = true;
-						console.log(e.submitted_answer_id, {...this.option});
+						// console.log(e.submitted_answer_id, {...this.option});
 					}
 				})
 			}
