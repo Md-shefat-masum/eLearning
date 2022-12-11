@@ -39,10 +39,10 @@
 							:title="`sass`"
 						></WhatYouWillLearnItem>
 
-						<WhatYouWillLearnItem
+						<!-- <WhatYouWillLearnItem
 							:image_name="`less`"
 							:title="`less`"
-						></WhatYouWillLearnItem>
+						></WhatYouWillLearnItem> -->
 
 						<WhatYouWillLearnItem
 							:image_name="`bootstrap`"

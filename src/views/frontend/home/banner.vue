@@ -34,15 +34,18 @@
 								</span>
 							</p>
 							<div class="links">
-								<!-- <router-link to="/enroll" class="mybtn3 mybtn-light">
-									<span>Enroll Now</span>
-								</router-link> -->
-								<router-link v-if="get_check_auth_status === false" to="/register" class="mybtn3 mybtn-light font-bangla font-bold">
-									<span>
-										<b>কোর্স এনরোল করতে রেজিস্ট্রেশন করুন</b>
+								<router-link to="/enroll" class="mybtn3 font-22 mybtn-light me-4 font-bangla font-bold">
+									<span> 
+										<b>কোর্সে ভর্তি হতে ফর্ম ফিলাপ করুন</b>
 									</span>
 								</router-link>
-								<router-link v-if="get_check_auth_status" to="/dashboard" class="mybtn3 mybtn-light font-bangla font-bold">
+
+								<router-link v-if="get_check_auth_status === false" to="/register" class="mybtn3 font-22 mybtn-light font-bangla font-bold">
+									<span>
+										<b>ফ্রী কোর্স দেখতে রেজিস্ট্রেশন করুন</b>
+									</span>
+								</router-link>
+								<router-link v-if="get_check_auth_status" to="/dashboard" class="mybtn3 mybtn-light font-22 font-bangla font-bold">
 									<span>
 										<b>ড্যাশবোর্ড দেখুন</b>
 									</span>
@@ -129,4 +132,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+	.me-4{
+		margin-right: 40px;
+	}
+	.font-22{
+		font-size: 22px;
+	}
+</style>

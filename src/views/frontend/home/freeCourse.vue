@@ -20,16 +20,12 @@
 				>
 					<div class="box" data-aos="fade-right">
 						<div class="inner-box">
-							<img
-								class="rounded"
-								:src="crash_course.full_thumbnail"
-								alt=""
-							/>
+							<img class="rounded"
+								:src="crash_course.full_thumbnail" alt="" />
 							<h4 class="title font-bangla">
 								{{ crash_course.title }}
 							</h4>
-							<router-link
-								to="/register"
+							<router-link to="/register"
 								v-if="
 									!get_check_auth_status &&
 									crash_course.batch_students.length == 0
@@ -39,8 +35,7 @@
 								এনরোল করুন
 							</router-link>
 
-							<a
-								href="#"
+							<a href="#"
 								v-if="
 									get_check_auth_status &&
 									crash_course.batch_students &&
@@ -51,8 +46,7 @@
 							>
 								এনরোল করুন
 							</a>
-							<a
-								:href="`/course-details/${
+							<a :href="`/course-details/${
 									crash_course.id
 								}/${crash_course.title.toLocaleLowerCase()}`"
 								@click.prevent="
@@ -130,7 +124,7 @@ export default {
 					},
 				})
 				.then((res) => {
-					console.log(res.data);
+					// console.log(res.data);
 					this.crash_courses = res.data;
 				});
 		},

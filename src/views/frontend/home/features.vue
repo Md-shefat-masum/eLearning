@@ -20,11 +20,11 @@
 								<i class="fa fa-video"></i>
 							</div>
 							<h4 class="title font-bangla">
-								৮৪ টি মডিউলে ৬০০+ ভিডিও
+								40+ টি মডিউল
 							</h4>
 							<p class="text font-bangla-p">
 								আপনারা যেন ধাপে ধাপে শিখতে পারেন সেজন্য পুরো
-								কোর্সটি ৮৪টি মডিউলে ও ৬০০+ ভিডিওতে ভাগ করে
+								কোর্সটি ৮৪টি মডিউলে ভাগ করে
 								সাজানো হয়েছে।
 							</p>
 						</div>
@@ -36,7 +36,7 @@
 							<div class="icon">
 								<i class="fa fa-brain"></i>
 							</div>
-							<h4 class="title font-bangla">২০০+ টি কুইজ</h4>
+							<h4 class="title font-bangla">১০০+ টি কুইজ</h4>
 							<p class="text font-bangla-p">
 								শেখার সাথে সাথে নিজেদের প্রোগ্রেস যাচাই করতে
 								পারেন সেজন্য প্রতিটি ভিডিও শেষে উত্তর সহ কুইজ
@@ -51,7 +51,7 @@
 							<div class="icon">
 								<i class="fa fa-laptop-code"></i>
 							</div>
-							<h4 class="title font-bangla">১৫ টি এসাইনমেন্ট</h4>
+							<h4 class="title font-bangla">এসাইনমেন্ট</h4>
 							<p class="text font-bangla-p">
 								প্রতি সাপ্তাহ শেষেই থাকবে একটি করে এসাইনমেন্ট
 								যেগুলো আপনারা নিজে করবেন। নির্দিষ্ট সময়ের মধ্যে
@@ -67,7 +67,7 @@
 								<i class="fa fa-code"></i>
 							</div>
 							<h4 class="title font-bangla">
-								৩৫ টি মডিউল প্রোজেক্ট
+								মডিউল প্রোজেক্ট
 							</h4>
 							<p class="text font-bangla-p">
 								প্রতিটি মডিউল শেষেই থাকবে একটি করে প্রোজেক্ট

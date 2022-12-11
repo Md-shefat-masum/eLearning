@@ -66,18 +66,18 @@
 									name="address"
 								></textarea>
 							</div>
-							<div class="form-group">
+							<div class="form-group d-none">
 								<label for="" class="font-bangla">
 									কোর্সের ধরণ <span class="text-danger"> * </span>
 								</label>
 								<br>
 								<label for="pre_recorded">
-									<input id="pre_recorded" checked type="radio" name="course_type" value="pre-recorded">
+									<input id="pre_recorded"  type="radio" name="course_type" value="pre-recorded">
 									Pre recorded
 								</label>
 								&nbsp; &nbsp;
 								<label for="live_course">
-									<input id="live_course" type="radio" name="course_type" value="live-course">
+									<input id="live_course" checked type="radio" name="course_type" value="live-course">
 									Live course
 								</label>
 							</div>
