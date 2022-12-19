@@ -58,7 +58,7 @@
 				<div class="col-md-10 col-lg-8">
 					<div class="section-title extra">
 						<h2 class="title font-bangla">
-							PHP with LARAVEL কোর্স মডিউলে যা কিছু থাকছে
+							PHP With LARAVEL কোর্স মডিউলে যা কিছু থাকছে
 						</h2>
 						<p class="font-bangla-nav">
 							{{phpModule.length}} টি মডিউলে সাজানো হয়েছে কোর্সটি
@@ -77,10 +77,9 @@
 				<div class="col-lg-7">
 					<div class="module_list_body">
 						<div class="module_list">
-							
 							<div v-if="phpModule.length">
 								<div
-									v-for="(item, index) in reactModule"
+									v-for="(item, index) in phpModule"
 									:key="index"
 									class="item"
 								>
