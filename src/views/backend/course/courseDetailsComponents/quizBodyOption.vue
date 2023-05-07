@@ -60,6 +60,7 @@ export default {
 				return true;
 			}
 			return false;
+
 		},
 		isInQuizAttended: function () {
 			// console.log(this.get_selected_quiz_question);
