@@ -319,6 +319,65 @@
     .home9 .hero-area .left-content .content .title {
         font-size: 40px;
         line-height: 50px;
+        text-align: center;
+    }
+
+    .home5 .hero-area{
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .hero-area .left-content .content .title {
+        text-align: center;
+    }
+
+    .hero-area .left-content .content .subtitle {
+
+        text-align: center;
+    }
+    .hero-area .left-content .content .links a{
+        margin-right: 0 !important;
+    }
+
+    .hero-area .left-content .content .links {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mainmenu ul.navbar-nav {
+        min-height: 250px;
+        height: 100%;
+    }
+    .navigation .navbar #mainmenu ul .nav-item .nav-link.nav-link-login {
+
+        margin-left: 0 !important;
+    }
+
+    div#mainmenu{
+        padding-bottom: 15px;
+    }
+
+    .navigation .navbar #mainmenu ul .nav-item .nav-link.nav-link-login {
+        padding: 8px 25px  !important;
+    }
+
+    .hero-area .left-content .content .links a {
+        padding: 8px 25px !important;
+    }
+
+    .about {
+        padding: 30px 0px 30px !important;
+    }
+
+    .hero-area {
+        padding: 125px 0px 30px !important;
+    }
+
+    .frontend{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 

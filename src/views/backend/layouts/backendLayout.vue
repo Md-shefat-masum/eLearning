@@ -11,7 +11,10 @@ import BackendHeader from './backendHeader.vue';
 import BackendFooter from './backendFooter.vue';
 import { mapGetters } from 'vuex';
 export default { 
-	components: { BackendHeader, BackendFooter }, 
+	components: { 
+		BackendHeader, 
+		BackendFooter
+ }, 
 	watch: {
 		get_check_auth_status: {
 			handler: function(){

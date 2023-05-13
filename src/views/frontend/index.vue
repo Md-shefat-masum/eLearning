@@ -1,42 +1,54 @@
 <template>
 	<div>
 		<Banner></Banner>
-		<free-course></free-course>
 		<Features></Features>
-		<courseModules></courseModules>
+		<CourseSegments></CourseSegments>
+		<Faq></Faq>
+		<Contact></Contact>
+		<Projects></Projects>
+		<Instructor></Instructor>
+		<!-- <classBasedCourseModules></classBasedCourseModules> -->
+		<!-- <courseModules></courseModules> -->
+		<!-- <free-course></free-course>
 		<Projects></Projects>
 		<HowCourseWillRun></HowCourseWillRun>
 		<WhatYouWillLearn></WhatYouWillLearn>
-		<Faq></Faq>
+		<Faq></Faq> -->
 		<!-- <Video></Video> -->
 		<!-- <Compare></Compare> -->
 		<!-- <Testimonial></Testimonial> -->
 		<!-- <Subscribe></Subscribe> -->
-		<Contact></Contact>
+		<!-- <Contact></Contact> -->
 	</div>
 </template>
 
 <script>
 import Banner from "./home/banner.vue";
 import Features from "./home/features.vue";
-import courseModules from "./home/courseModules.vue";
+import CourseSegments from "./home/courseSegments.vue";
+// import classBasedCourseModules from "./home/classBasedCourseModules.vue";
+// import courseModules from "./home/courseModules.vue";
 import Projects from "./home/projects.vue";
-import HowCourseWillRun from "./home/howCourseWillRun.vue";
+// import HowCourseWillRun from "./home/howCourseWillRun.vue";
 import Faq from "./home/faq.vue";
 import Contact from "./home/contact.vue";
-import WhatYouWillLearn from "./home/whatYouWillLearn.vue";
-import FreeCourse from './home/freeCourse.vue';
+import Instructor from "./home/instructor.vue";
+// import WhatYouWillLearn from "./home/whatYouWillLearn.vue";
+// import FreeCourse from './home/freeCourse.vue';
 export default {
 	components: {
     Banner,
     Features,
-    courseModules,
+	CourseSegments,
+	Instructor,
+	// classBasedCourseModules,
+    // courseModules,
     Projects,
-	HowCourseWillRun,
+	// HowCourseWillRun,
     Faq,
     Contact,
-    WhatYouWillLearn,
-FreeCourse
+    // WhatYouWillLearn,
+// FreeCourse
 },
 	created: function () {
 		// window.homePagePlugins();

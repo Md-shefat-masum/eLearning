@@ -20,11 +20,11 @@
 								<i class="fa fa-video"></i>
 							</div>
 							<h4 class="title font-bangla">
-								40+ টি মডিউল
+								75 টি মডিউল
 							</h4>
 							<p class="text font-bangla-p">
 								আপনারা যেন ধাপে ধাপে শিখতে পারেন সেজন্য পুরো
-								কোর্সটি ৮৪টি মডিউলে ভাগ করে
+								কোর্সটি 75টি মডিউলে ভাগ করে
 								সাজানো হয়েছে।
 							</p>
 						</div>
@@ -36,7 +36,7 @@
 							<div class="icon">
 								<i class="fa fa-brain"></i>
 							</div>
-							<h4 class="title font-bangla">১০০+ টি কুইজ</h4>
+							<h4 class="title font-bangla">75 টি কুইজ</h4>
 							<p class="text font-bangla-p">
 								শেখার সাথে সাথে নিজেদের প্রোগ্রেস যাচাই করতে
 								পারেন সেজন্য প্রতিটি ভিডিও শেষে উত্তর সহ কুইজ
@@ -51,9 +51,9 @@
 							<div class="icon">
 								<i class="fa fa-laptop-code"></i>
 							</div>
-							<h4 class="title font-bangla">এসাইনমেন্ট</h4>
+							<h4 class="title font-bangla">12 টি এসাইনমেন্ট</h4>
 							<p class="text font-bangla-p">
-								প্রতি সাপ্তাহ শেষেই থাকবে একটি করে এসাইনমেন্ট
+								প্রতি মডিউল শেষেই থাকবে এসাইনমেন্ট
 								যেগুলো আপনারা নিজে করবেন। নির্দিষ্ট সময়ের মধ্যে
 								এসাইনমেন্ট জমা দিতে হবে।
 							</p>
@@ -84,10 +84,10 @@
 								<i class="fa fa-headset"></i>
 							</div>
 							<h4 class="title font-bangla">
-								সাপ্তাহে ৩দিন লাইভ সেশন
+								সাপ্তাহে 3দিন লাইভ সেশন
 							</h4>
 							<p class="text font-bangla-p">
-								লাইভ সেশনের ব্যবস্থা থাকছে যেখানে আমরা
+								লাইভ সেশনে আমরা
 								গুরুত্ত্বপূর্ণ টপিক নিয়ে আলোচনার পাশাপাশি
 								আপনাদের সমস্যা এবং বিভিন্ন প্রশ্নের উত্তর দিব।
 							</p>
