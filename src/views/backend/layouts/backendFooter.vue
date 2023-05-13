@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- Footer Section Start -->
-		<footer class="footer" id="footer">
+		<footer class="footer d-none" id="footer">
 			<img class="shape" src="/assets/images/shape-pattern.png" alt="" />
 			<div class="container">
 				<div class="row justify-content-center">

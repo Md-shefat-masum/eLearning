@@ -1,0 +1,6 @@
+{
+    "watchFolder": "./public/assets/less",
+    "outputFolder": "./public/assets/styles",
+    "mainFile": "custom.less",
+    "sourceMap": true
+}

@@ -81,7 +81,7 @@
 										class="nav-link font-bangla-nav nav-link-login"
 										to="/login"
 									>
-										লগইন
+										লগইন করুন
 									</router-link>
 								</li>
 								<li

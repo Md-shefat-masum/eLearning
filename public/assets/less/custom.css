@@ -81,20 +81,10 @@
 .navigation .navbar #mainmenu ul .nav-item .nav-link.nav-link-login {
   border: 1px solid #515151;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 4px;
   margin-left: 20px;
   background: #d31027;
   background: linear-gradient(to right, #ea384d, #d31027);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #d31027;
-  transition: background 1s;
-  font-weight: 600 !important;
-}
-.navigation .navbar #mainmenu ul .nav-item .nav-link.nav-link-login:hover {
-  transition: background 1s;
-  background: rgba(0, 0, 0, 0.374);
 }
 .home5 .about .box .inner-box .icon i {
   background: #3feade;
@@ -1183,4 +1173,3 @@ form .loader.active .d_progress {
 .project_submissions ul li div {
   flex: 1;
 }
-/*# sourceMappingURL=custom.css.map */

@@ -3,28 +3,6 @@
 		<div class="container mt-5 py-5">
 			<h2 class="text-center mb-5">My Courses</h2>
 			<div class="course_list">
-				<!-- <div class="course_item">
-					<div class="left">
-						<img src="assets/images/blog/img4.png" alt="" />
-					</div>
-					<div class="right">
-						<h2>HTML CSS crush course</h2>
-						<h3>Muhammad Shefat Ullah</h3>
-						<div class="progress_body">
-							<div class="progress_bar">
-								<div class="progress_fill"></div>
-							</div>
-							<div class="percent">0%</div>
-						</div>
-						<a href="#" class="mybtn3 mybtn-light">
-							<span class="days"></span><span>:</span>
-							<span class="hours"></span><span>:</span>
-							<span class="minutes"></span><span>:</span>
-							<span class="seconds"></span>
-							<span>Days</span>
-						</a>
-					</div>
-				</div> -->
 				<div
 					class="course_item"
 					v-for="course in get_user_courses"
