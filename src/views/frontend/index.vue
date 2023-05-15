@@ -7,7 +7,7 @@
 		<Contact></Contact>
 		<Projects></Projects>
 		<Instructor></Instructor>
-		<!-- <classBasedCourseModules></classBasedCourseModules> -->
+		<ClassBasedCourseModules></ClassBasedCourseModules>
 		<!-- <courseModules></courseModules> -->
 		<!-- <free-course></free-course>
 		<Projects></Projects>
@@ -26,7 +26,7 @@
 import Banner from "./home/banner.vue";
 import Features from "./home/features.vue";
 import CourseSegments from "./home/courseSegments.vue";
-// import classBasedCourseModules from "./home/classBasedCourseModules.vue";
+import ClassBasedCourseModules from "./home/classBasedCourseModules.vue";
 // import courseModules from "./home/courseModules.vue";
 import Projects from "./home/projects.vue";
 // import HowCourseWillRun from "./home/howCourseWillRun.vue";
@@ -41,7 +41,7 @@ export default {
     Features,
 	CourseSegments,
 	Instructor,
-	// classBasedCourseModules,
+	ClassBasedCourseModules,
     // courseModules,
     Projects,
 	// HowCourseWillRun,
@@ -56,4 +56,7 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+
+</style>
