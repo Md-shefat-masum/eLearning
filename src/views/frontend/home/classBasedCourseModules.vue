@@ -54,32 +54,6 @@
 
 			</div>
 
-			<div class="row d-flex frontend align-items-center">
-				<div data-aos="fade-right"  class="col-12 col-lg-6 segment_left">
-					<img src="/assets/images/front-end.png" alt="">
-				</div>
-				<div data-aos="fade-left"  class="col-12 col-lg-6 segment_right">
-					<div class="num_shape">
-						<img src="/assets/images/shape-1.png" alt="">
-						<span class="shape">৩</span>
-					</div>
-					<h3 class="section_heading">ফ্রোন্টএন্ড ডেভলপমেন্ট</h3>
-					<p class="section_description">
-						- ReactJS এর Core বিষয় গুলো কাভার করার পর, Redux, React-Redux, এবং Redux-toolkit দিয়ে আমরা ফ্রন্টএন্ড ডেভলপমেন্ট শুরু করবো, এছাড়া থাকছে NextJS, Prisma এবং TypeScript, NestJS এর মতো ফুলস্টাক ফ্রেমওয়ার্ক্স।
-						<br>
-						<br>
-						- এবার এত দিন ধরে যা কিছু শিখেছি তা প্রাকটিকালি ইম্লিমেন্ট করার জন্য সব কিছুর সমন্বয়ে আমরা তৈরী করবো ফেসবুক এবং দারাজের মত ফুল-স্ট্যাক ওয়েবসাইটসহ আরো প্রায় ১০টি এক্সাইটিং প্রজেক্ট।
-
-					<br>
-					<br>
-					এ পর্যন্ত যারা লেগে থাকবে তাদের জন্য বোনাস হিসেবে থাকবে  Linux fundamental, AWS, Google Cloud, Firebase, CPanel, Docker, Code Testing, CI/CD, Project Deployment সহ আরো অনেক কিছু
-				<br>
-				- এ পর্যায়ে আপনি একজন ফুল-স্ট্যাক ডেভেলপার হিসেবে ক্যারিয়ার শুরু করতে পারবেন।
-
-					</p>
-				</div>
-			</div>
-
 			
 		</div>
 		<!-- About Area End -->
