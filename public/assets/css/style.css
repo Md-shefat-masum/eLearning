@@ -4376,6 +4376,9 @@ select:focus {
   border: 0;
   margin-bottom: 10px;
 }
+.milestone:last-child {
+  margin-bottom: 0;
+}
 .milestone-heading {
   font-size: 17px;
   font-weight: 500;
@@ -4392,6 +4395,9 @@ select:focus {
   padding-left: 5px;
 }
 
+.accordion-button:focus {
+  box-shadow: none;
+}
 .accordion-button::after {
   background-image: url('../images/icon/plus.png');
 }
