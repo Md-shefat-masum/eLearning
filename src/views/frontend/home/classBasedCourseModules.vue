@@ -26,7 +26,7 @@
 						<div class="accordion" id="accordionExample">
 							<div
 								class="accordion-item milestone"
-								v-for="(milestone, index) in webDesignModules"
+								v-for="(milestone, index) in webDesignModules.slice(0, 7)"
 								:key="index"
 							>
 								<h2
@@ -100,7 +100,7 @@
 						<div class="accordion" id="accordionExample">
 							<div
 								class="accordion-item milestone"
-								v-for="(milestone, index) in webDesignModules"
+								v-for="(milestone, index) in webDesignModules.slice(7,20)"
 								:key="index"
 							>
 								<h2
@@ -127,7 +127,7 @@
 										<div class="milestone-text">
 											<span
 												>Milestone
-												{{ index + 1 }}:</span
+												{{ index + 8 }}:</span
 											>
 											{{ milestone.name }}
 										</div>
@@ -184,7 +184,7 @@
 						<div class="accordion" id="accordionExample">
 							<div
 								class="accordion-item milestone"
-								v-for="(milestone, index) in webDesignModules"
+								v-for="(milestone, index) in webDesignModules.slice(20, webDesignModules.length)"
 								:key="index"
 							>
 								<h2
@@ -211,7 +211,7 @@
 										<div class="milestone-text">
 											<span
 												>Milestone
-												{{ index + 1 }}:</span
+												{{ index + 21 }}:</span
 											>
 											{{ milestone.name }}
 										</div>

@@ -50,8 +50,13 @@
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
+							:image_name="`tailwind`"
+							:title="`tailwindCSS`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
 							:image_name="`js`"
-							:title="`Java Script`"
+							:title="`JavaScript`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
@@ -61,7 +66,7 @@
 
 						<WhatYouWillLearnItem
 							:image_name="`react`"
-							:title="`React JS`"
+							:title="`ReactJS`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
@@ -71,22 +76,27 @@
 
 						<WhatYouWillLearnItem
 							:image_name="`nodejs`"
-							:title="`Node JS`"
+							:title="`NodeJS`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
 							:image_name="`expressjs`"
-							:title="`Express JS`"
+							:title="`ExpressJS`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
 							:image_name="`mongodb`"
-							:title="`Mongo DB, Mongoose`"
+							:title="`MongoDB, Mongoose`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
 							:image_name="`restapi`"
 							:title="`REST API`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`nextjs`"
+							:title="`NextJS`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
