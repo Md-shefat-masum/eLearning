@@ -374,4 +374,104 @@ export default [
 			},
 		],
 	},
+	{
+		id: "২২",
+		name: "Full Stack Blog Website",
+		modules: [
+			{
+				id: "৬৩",
+				name: "Full Stack Blog Application with React (Part 01 - 10) [Recorded Class]",
+			},
+		],
+	},
+	{
+		id: "২৩",
+		name: "Explore Redux",
+		modules: [
+			{
+				id: "৬৪",
+				name: "Redux Fundamentals",
+			},
+			{
+				id: "৬৫",
+				name: "React-Redux & middleware",
+			},
+			{
+				id: "৬৬",
+				name: "Redux-Toolkit",
+			},
+			{
+				id: "৬৭",
+				name: "Redux Thunk & RTK Query",
+			},
+		],
+	},
+	{
+		id: "২৪",
+		name: "Full Stack E-Commerce Website",
+		modules: [
+			{
+				id: "৬৮",
+				name: "Full Stack E-commerce Website using React, Redux",
+			},
+		],
+	},
+	{
+		id: "২৫",
+		name: "Getting started with NextJS",
+		modules: [
+			{
+				id: "৬৯",
+				name: "Next.js Basics",
+			},
+			{
+				id: "৭০",
+				name: "Routing, Server & Client Components",
+			},
+			{
+				id: "৭১",
+				name: "Data Fetching Caching Suspense",
+			},
+			{
+				id: "৭২",
+				name: "Optimizing Images, Optimizing Fonts, Lazy Loading",
+			},
+			{
+				id: "৭৩",
+				name: "Backend Api Routing",
+			},
+			{
+				id: "৭৪",
+				name: "Prisma integration with NextJs",
+			},
+		],
+	},
+	{
+		id: "২৬",
+		name: "Full Stack Project with NextJS & Prisma",
+		modules: [
+			{
+				id: "৭৫",
+				name: "Full Stack E-Learning Web Application with NextJS[Recorded Class]",
+			},
+		],
+	},
+	{
+		id: "২৭",
+		name: "Bonus",
+		modules: [
+			{
+				id: "১",
+				name: "Build a facebook clone with React js, Node js, Express js and Mongodb",
+			},
+			{
+				id: "২",
+				name: "Typescript & NestJS",
+			},
+			{
+				id: "৩",
+				name: "Linux Fundamental, AWS Cloud, CI/CD, Docker, Testing and so on",
+			},
+		],
+	},
 ];
