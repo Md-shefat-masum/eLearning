@@ -1,5 +1,5 @@
 <template>
-	<section class="about" id="features">
+	<section class="about" id="modules">
 		<!-- About Area Start -->
 		<div class="container">
 			<div class="row justify-content-center">
