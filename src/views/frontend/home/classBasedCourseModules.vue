@@ -23,7 +23,7 @@
 				<div data-aos="fade-left" class="col-12 col-lg-6 segment_right">
 					<h3 class="section_heading segment_heading">ওয়েব ডিজাইন</h3>
 					<div class="modules">
-						<div class="accordion" id="accordionExample">
+						<div class="accordion" id="web_design">
 							<div
 								class="accordion-item milestone"
 								v-for="(milestone, index) in webDesignModules.slice(0, 7)"
@@ -31,15 +31,15 @@
 							>
 								<h2
 									class="accordion-header"
-									:id="'heading' + index"
+									:id="'heading_web_design' + index"
 								>
 									<button
 										class="accordion-button milestone-heading collapsed"
 										type="button"
 										data-bs-toggle="collapse"
-										:data-bs-target="'#collapse' + index"
+										:data-bs-target="'#collapse_web_design' + index"
 										aria-expanded="false"
-										:aria-controls="'collapse' + index"
+										:aria-controls="'collapse_web_design' + index"
 									>
 										<div class="module_shape">
 											<img
@@ -60,10 +60,10 @@
 									</button>
 								</h2>
 								<div
-									:id="'collapse' + index"
+									:id="'collapse_web_design' + index"
 									class="accordion-collapse collapse"
-									:aria-labelledby="'heading' + index"
-									data-bs-parent="#accordionExample"
+									:aria-labelledby="'heading_web_design' + index"
+									data-bs-parent="#web_design"
 								>
 									<div class="accordion-body milestone-body">
 										<ul>
@@ -97,7 +97,7 @@
 						ব্যাকএন্ড ডেভলপমেন্ট
 					</h3>
 					<div class="modules">
-						<div class="accordion" id="accordionExample">
+						<div class="accordion" id="backend_development">
 							<div
 								class="accordion-item milestone"
 								v-for="(milestone, index) in webDesignModules.slice(7,20)"
@@ -105,15 +105,15 @@
 							>
 								<h2
 									class="accordion-header"
-									:id="'heading' + index"
+									:id="'heading_front_end' + index"
 								>
 									<button
 										class="accordion-button milestone-heading collapsed"
 										type="button"
 										data-bs-toggle="collapse"
-										:data-bs-target="'#collapse' + index"
+										:data-bs-target="'#collapse_front_end' + index"
 										aria-expanded="false"
-										:aria-controls="'collapse' + index"
+										:aria-controls="'collapse_front_end' + index"
 									>
 										<div class="module_shape">
 											<img
@@ -134,10 +134,10 @@
 									</button>
 								</h2>
 								<div
-									:id="'collapse' + index"
+									:id="'collapse_front_end' + index"
 									class="accordion-collapse collapse"
-									:aria-labelledby="'heading' + index"
-									data-bs-parent="#accordionExample"
+									:aria-labelledby="'heading_front_end' + index"
+									data-bs-parent="#backend_development"
 								>
 									<div class="accordion-body milestone-body">
 										<ul>
@@ -181,7 +181,7 @@
 						ফ্রন্টএন্ড ডেভেলপমেন্ট
 					</h3>
 					<div class="modules">
-						<div class="accordion" id="accordionExample">
+						<div class="accordion" id="frontend_development">
 							<div
 								v-for="(milestone, index) in webDesignModules.slice(20, webDesignModules.length)"
 								:class="{'accordion-item milestone': milestone.name !== 'Bonus', 'bonus_milestone': milestone.name === 'Bonus'}"
@@ -190,15 +190,15 @@
 
 								<h2
 									class="accordion-header"
-									:id="'heading' + index"
+									:id="'heading_backend' + index"
 								>
 									<button
 										class="accordion-button milestone-heading collapsed"
 										type="button"
 										data-bs-toggle="collapse"
-										:data-bs-target="'#collapse' + index"
+										:data-bs-target="'#collapse_backend' + index"
 										aria-expanded="false"
-										:aria-controls="'collapse' + index"
+										:aria-controls="'collapse_backend' + index"
 										v-if="milestone.name !== 'Bonus'"
 									>
 										<div class="module_shape">
@@ -222,9 +222,9 @@
 										class="accordion-button milestone-heading collapsed"
 										type="button"
 										data-bs-toggle="collapse"
-										:data-bs-target="'#collapse' + index"
+										:data-bs-target="'#collapse_backend' + index"
 										aria-expanded="false"
-										:aria-controls="'collapse' + index"
+										:aria-controls="'collapse_backend' + index"
 										v-if="milestone.name === 'Bonus'"
 									>
 										<div class="milestone-text">
@@ -233,10 +233,10 @@
 									</button>
 								</h2>
 								<div
-									:id="'collapse' + index"
+									:id="'collapse_backend' + index"
 									class="accordion-collapse collapse"
-									:aria-labelledby="'heading' + index"
-									data-bs-parent="#accordionExample"
+									:aria-labelledby="'heading_backend' + index"
+									data-bs-parent="#frontend_development"
 								>
 									<div class="accordion-body milestone-body">
 										<ul>
