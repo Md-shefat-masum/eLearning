@@ -4353,6 +4353,14 @@ select:focus {
 
 /* ====== module accordion ===== */
 
+.milestone_segment {
+  margin-top: 50px;
+}
+
+.segment_heading {
+  margin: 30px 10px;
+}
+
 .modules {
   max-height: 550px;
   overflow-y: auto;
