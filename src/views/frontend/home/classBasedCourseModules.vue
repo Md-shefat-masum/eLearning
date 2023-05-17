@@ -183,10 +183,11 @@
 					<div class="modules">
 						<div class="accordion" id="accordionExample">
 							<div
-								class="accordion-item milestone"
 								v-for="(milestone, index) in webDesignModules.slice(20, webDesignModules.length)"
+								:class="{'accordion-item milestone': milestone.name !== 'Bonus', 'bonus_milestone': milestone.name === 'Bonus'}"
 								:key="index"
 							>
+
 								<h2
 									class="accordion-header"
 									:id="'heading' + index"
@@ -198,6 +199,7 @@
 										:data-bs-target="'#collapse' + index"
 										aria-expanded="false"
 										:aria-controls="'collapse' + index"
+										v-if="milestone.name !== 'Bonus'"
 									>
 										<div class="module_shape">
 											<img
@@ -214,6 +216,19 @@
 												{{ index + 21 }}:</span
 											>
 											{{ milestone.name }}
+										</div>
+									</button>
+									<button
+										class="accordion-button milestone-heading collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										:data-bs-target="'#collapse' + index"
+										aria-expanded="false"
+										:aria-controls="'collapse' + index"
+										v-if="milestone.name === 'Bonus'"
+									>
+										<div class="milestone-text">
+											Bonus Milestone
 										</div>
 									</button>
 								</h2>

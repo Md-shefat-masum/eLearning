@@ -7,10 +7,10 @@
 		<Projects></Projects>
 		<WhatYouWillLearn></WhatYouWillLearn>
 		<free-course></free-course>
+		<HowCourseWillRun></HowCourseWillRun>
+		<Instructor></Instructor>
 		<Faq></Faq>
 		<Contact></Contact>
-		<Instructor></Instructor>
-		<HowCourseWillRun></HowCourseWillRun>
 	</div>
 </template>
 
@@ -36,9 +36,9 @@ export default {
 		Projects,
 		WhatYouWillLearn,
 		HowCourseWillRun,
+		FreeCourse,
 		Faq,
 		Contact,
-		FreeCourse,
 	},
 	created: function () {
 		// window.homePagePlugins();

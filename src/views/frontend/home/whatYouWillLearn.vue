@@ -90,13 +90,33 @@
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
+							:image_name="`mysql`"
+							:title="`MySql`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
 							:image_name="`restapi`"
 							:title="`REST API`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
+							:image_name="`pug`"
+							:title="`PugJS`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`ejs2`"
+							:title="`ejs`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`graphql`"
+							:title="`GraphQL`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
 							:image_name="`nextjs`"
-							:title="`NextJS`"
+							:title="`NextJS, Prisma`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
@@ -110,13 +130,38 @@
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
-							:image_name="`heroku`"
-							:title="`Heroku`"
+							:image_name="`websocket`"
+							:title="`WebSocket, Socket.io`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`rtc`"
+							:title="`WebRTC`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`redis`"
+							:title="`Redis`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`stripe`"
+							:title="`Stripe`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
 							:image_name="`cpanel`"
 							:title="`Cpanel`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`aws1`"
+							:title="`AWS Cloud`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`docker`"
+							:title="`Docker`"
 						></WhatYouWillLearnItem>
 
 					</div>
