@@ -20,13 +20,12 @@
 						data-aos="fade-right"
 					>
 						<AccordionItem
-							v-for="(item,index) in questions()"
+							v-for="(item, index) in questions()"
 							:key="index"
 							:id="`a${index}`"
 							:title="item.title"
 							:content="item.content"
 						></AccordionItem>
-
 					</div>
 				</div>
 				<div class="col-lg-6 d-flex">
@@ -92,8 +91,8 @@ export default {
 				{
 					title: `আমার কি কি জিনিস লাগবে?`,
 					content: `
-						সবার প্রথমে প্রয়োজন হবে আপনার ডেডিকেটেড সময় এবং আন্তরিক পরিশ্রম ও অধ্যবসায়। 
-						যদি আপনি এগুলো দিতে না পারেন, তাহলে এই কোর্সে এনরোল করে আপনার কোন লাভ হবেনা। 
+						সবার প্রথমে প্রয়োজন হবে আপনার ডেডিকেটেড সময় এবং আন্তরিক প্রচেস্টা ও অধ্যবসায়। 
+						যদি আপনি এগুলো দিতে না পারেন, তাহলে এই কোর্সে এনরোল করে আপনার কোনো লাভ হবেনা। 
 						এছাড়া আপনার প্রয়োজন হবে একটি ল্যাপটপ বা কম্পিউটার যেখানে 
 						Google Chrome ব্রাউজার, Node.js এবং VS Code এডিটর ইন্সটল করা থাকতে হবে।
 					`,

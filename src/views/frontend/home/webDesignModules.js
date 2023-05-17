@@ -258,11 +258,11 @@ export default [
 		modules: [
 			{
 				id: "৪৩",
-				name: "Building first ever full stack Task management app(Part 01)",
+				name: "Building first ever full stack Task management app (Part 01)",
 			},
 			{
 				id: "৪৪",
-				name: "Building first ever full stack Task management app(Part 02)",
+				name: "Building first ever full stack Task management app (Part 02)",
 			},
 		],
 	},
@@ -452,7 +452,7 @@ export default [
 		modules: [
 			{
 				id: "৭৫",
-				name: "Full Stack E-Learning Web Application with NextJS[Recorded Class]",
+				name: "Full Stack E-Learning Web Application with NextJS [Recorded Class]",
 			},
 		],
 	},

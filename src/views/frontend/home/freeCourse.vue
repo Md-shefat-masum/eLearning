@@ -5,7 +5,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-10 col-lg-8">
 					<div class="section-title extra">
-						<h2 class="title font-bangla">ফ্রী কোর্স সমূহ</h2>
+						<h2 class="title font-bangla">ফ্রি কোর্স সমূহ</h2>
 						<p class="font-bangla-nav">
 							এই কোর্স গুলো সম্পূর্ণ বিনা মূল্যে এনরোল করতে পারবেন
 						</p>
@@ -20,12 +20,16 @@
 				>
 					<div class="box" data-aos="fade-right">
 						<div class="inner-box">
-							<img class="rounded"
-								:src="crash_course.full_thumbnail" alt="" />
+							<img
+								class="rounded"
+								:src="crash_course.full_thumbnail"
+								alt=""
+							/>
 							<h4 class="title font-bangla">
 								{{ crash_course.title }}
 							</h4>
-							<router-link to="/register"
+							<router-link
+								to="/register"
 								v-if="
 									!get_check_auth_status &&
 									crash_course.batch_students.length == 0
@@ -35,7 +39,8 @@
 								এনরোল করুন
 							</router-link>
 
-							<a href="#"
+							<a
+								href="#"
 								v-if="
 									get_check_auth_status &&
 									crash_course.batch_students &&
@@ -46,7 +51,8 @@
 							>
 								এনরোল করুন
 							</a>
-							<a :href="`/course-details/${
+							<a
+								:href="`/course-details/${
 									crash_course.id
 								}/${crash_course.title.toLocaleLowerCase()}`"
 								@click.prevent="
@@ -65,7 +71,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="border border mt-5 border-top-0 border-secondary"></div>
 		</div>
 		<!-- About Area End -->
@@ -83,14 +89,14 @@ export default {
 	},
 	created: function () {
 		this.get_crash_courses();
-		this.$watch('get_check_auth_status',function(){
+		this.$watch("get_check_auth_status", function () {
 			this.get_crash_courses();
-		})
+		});
 	},
 	methods: {
-		...mapActions(["fetch_course_content","fetch_enroll_course"]),
-		enroll_course: async function(course){
-			await this.fetch_enroll_course({batch_id: course.id});
+		...mapActions(["fetch_course_content", "fetch_enroll_course"]),
+		enroll_course: async function (course) {
+			await this.fetch_enroll_course({ batch_id: course.id });
 			this.load_course_content(course);
 		},
 		load_course_content: async function (course) {
@@ -111,16 +117,16 @@ export default {
 		},
 		get_crash_courses: function () {
 			// console.log(axios.defaults.headers.common.Authorization);
-			let url =`/course/crash-courses`;
+			let url = `/course/crash-courses`;
 			let Authorization = null;
-			if(this.get_check_auth_status){
-				url = `/course/auth/crash-courses`
-				Authorization = axios.defaults.headers.common.Authorization
+			if (this.get_check_auth_status) {
+				url = `/course/auth/crash-courses`;
+				Authorization = axios.defaults.headers.common.Authorization;
 			}
 			axios
 				.get(url, {
 					headers: {
-						Authorization
+						Authorization,
 					},
 				})
 				.then((res) => {

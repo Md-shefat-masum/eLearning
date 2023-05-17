@@ -9,7 +9,7 @@
 							কোর্সে যে টপিকগুলো শিখানো হবে
 						</h2>
 						<p class="font-bangla-p">
-							প্রফেশনাল ওয়েবডেভেলপার হয়ে উঠতে যা কিছু লাগবে, তার
+							প্রফেশনাল ওয়েব ডেভেলপার হয়ে উঠতে যা কিছু লাগবে, তার
 							সবটুকু এই কোর্সটিতে আপানাদেরকে শিখানো হবে।
 						</p>
 					</div>
@@ -18,7 +18,6 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="what_you_will_learn_list">
-
 						<WhatYouWillLearnItem
 							:image_name="`html`"
 							:title="`html`"
@@ -163,7 +162,6 @@
 							:image_name="`docker`"
 							:title="`Docker`"
 						></WhatYouWillLearnItem>
-
 					</div>
 				</div>
 			</div>
