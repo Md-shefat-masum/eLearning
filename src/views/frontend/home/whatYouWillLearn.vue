@@ -9,7 +9,7 @@
 							কোর্সে যে টপিকগুলো শিখানো হবে
 						</h2>
 						<p class="font-bangla-p">
-							প্রফেশনাল ওয়েবডেভেলপার হয়ে উঠতে যা কিছু লাগবে, তার
+							প্রফেশনাল ওয়েব ডেভেলপার হয়ে উঠতে যা কিছু লাগবে, তার
 							সবটুকু এই কোর্সটিতে আপানাদেরকে শিখানো হবে।
 						</p>
 					</div>
@@ -18,7 +18,6 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="what_you_will_learn_list">
-
 						<WhatYouWillLearnItem
 							:image_name="`html`"
 							:title="`html`"
@@ -50,8 +49,13 @@
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
+							:image_name="`tailwind`"
+							:title="`tailwindCSS`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
 							:image_name="`js`"
-							:title="`Java Script`"
+							:title="`JavaScript`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
@@ -61,7 +65,7 @@
 
 						<WhatYouWillLearnItem
 							:image_name="`react`"
-							:title="`React JS`"
+							:title="`ReactJS`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
@@ -71,22 +75,47 @@
 
 						<WhatYouWillLearnItem
 							:image_name="`nodejs`"
-							:title="`Node JS`"
+							:title="`NodeJS`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
 							:image_name="`expressjs`"
-							:title="`Express JS`"
+							:title="`ExpressJS`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
 							:image_name="`mongodb`"
-							:title="`Mongo DB, Mongoose`"
+							:title="`MongoDB, Mongoose`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`mysql`"
+							:title="`MySql`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
 							:image_name="`restapi`"
 							:title="`REST API`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`pug`"
+							:title="`PugJS`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`ejs2`"
+							:title="`ejs`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`graphql`"
+							:title="`GraphQL`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`nextjs`"
+							:title="`NextJS, Prisma`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
@@ -100,8 +129,23 @@
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
-							:image_name="`heroku`"
-							:title="`Heroku`"
+							:image_name="`websocket`"
+							:title="`WebSocket, Socket.io`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`rtc`"
+							:title="`WebRTC`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`redis`"
+							:title="`Redis`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`stripe`"
+							:title="`Stripe`"
 						></WhatYouWillLearnItem>
 
 						<WhatYouWillLearnItem
@@ -109,6 +153,15 @@
 							:title="`Cpanel`"
 						></WhatYouWillLearnItem>
 
+						<WhatYouWillLearnItem
+							:image_name="`aws1`"
+							:title="`AWS Cloud`"
+						></WhatYouWillLearnItem>
+
+						<WhatYouWillLearnItem
+							:image_name="`docker`"
+							:title="`Docker`"
+						></WhatYouWillLearnItem>
 					</div>
 				</div>
 			</div>
